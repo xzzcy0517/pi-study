@@ -1,0 +1,11 @@
+# 原始学习对象仓库（Fork 的 Pi 源码），不上传
+pi/
+
+# 依赖与构建产物
+node_modules/
+.vitepress/dist/
+.vitepress/cache/
+
+# 系统与编辑器文件
+.DS_Store
+*.log
