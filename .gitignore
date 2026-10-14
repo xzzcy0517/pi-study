@@ -1,10 +1,13 @@
 # 原始学习对象仓库（Fork 的 Pi 源码），不上传
 pi/
 
-# 依赖与构建产物
+# 依赖与构建产物（任意层级）
 node_modules/
-.vitepress/dist/
-.vitepress/cache/
+**/.vitepress/dist/
+**/.vitepress/cache/
+
+# 教程实验的临时输出
+c-pi/labs/*/out*.txt
 
 # 系统与编辑器文件
 .DS_Store

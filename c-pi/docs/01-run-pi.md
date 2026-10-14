@@ -73,7 +73,7 @@ npm install --ignore-scripts
 读 `pi-test.sh` 本体可以看到，它只干两件事：
 
 1. 用 `node --import` 注册 `packages/coding-agent/src/experimental/source-resolver.ts`——一个模块解析钩子，把 `@earendil-works/*` 的导入按根 `tsconfig.json` 的 `paths` 指向**各包的 `src` 源码**，避免误用旧的构建产物（`dist`）；
-2. 直接执行 `packages/coding-agent/src/experimental/cli.ts`。
+2. 直接执行 `packages/coding-agent/src/cli.ts`。
 
 由此推出三个对你很重要的结论：
 
@@ -84,7 +84,7 @@ npm install --ignore-scripts
 **检查点**：输出一段用法帮助文本（含 `Usage` 字样）而不是报错。如果报 `ERR_MODULE_NOT_FOUND`，见下方「踩坑实录」。
 
 两个提示：
-- Pi **没有 `--version` 参数**，别试它。
+- Pi **支持** `--version`（或 `-v`），可以顺手验证：`./pi-test.sh --version` 应输出版本号（出处：`src/cli/args.ts`）。
 - 如果这一步直接进入了全屏交互界面，说明运行更成功——按 `Ctrl+D`（编辑器为空时）或连按 `Ctrl+C` 退出即可。
 
 Windows 用户改用 `pi-test.ps1`（PowerShell）或 `pi-test.bat`。
