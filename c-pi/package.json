@@ -1,0 +1,14 @@
+{
+	"name": "pi-study-c-pi",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"description": "Pi 学习工作区：文档站 + 示例代码 + 后续的复刻代码",
+	"workspaces": ["docs", "wiki/*", "packages/*"],
+	"scripts": {
+		"dev:docs": "npm run dev --workspace docs",
+		"build:docs": "npm run build --workspace docs",
+		"dev:shell": "npm run dev --workspace wiki/shell",
+		"build:shell": "npm run build --workspace wiki/shell"
+	}
+}
