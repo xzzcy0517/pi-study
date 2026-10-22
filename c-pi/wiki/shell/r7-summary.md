@@ -72,6 +72,7 @@ cd /Users/admin/Desktop/pi-study/pi
 学习实验请改 `c-pi/labs/` 里你自己复制的脚本练手，别动 `pi/` 里的原文件。
 
 **Q：想了解更多？**
+- 第 6 讲抢先装入的那位「翻译官」`source-resolver.ts` 是干什么的 → **第二季 [第 8 讲](/r8-why-resolver) 起**，同样逐块陪读；
 - node 启动之后 Pi 又做了什么 → 主线文档《执行 ./pi-test.sh 之后，发生了什么》：`c-pi/docs/02-run-to-ui.md`；
 - 每讲的动手实验文件 → 都在 `c-pi/labs/` 里对应子目录，可随便折腾；
 - 某个 bash 语法想再抠细 → 直接来问，我会把知识点补回教程。

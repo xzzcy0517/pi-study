@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "file": "hello.js",
+    "sourceRoot": "",
+    "sources": [
+        "hello.ts"
+    ],
+    "names": [],
+    "mappings": "AAAA,MAAM,UAAU,KAAK,CAAC,IAAY;IACjC,OAAO,MAAM,IAAI,EAAE,CAAC;AACrB,CAAC",
+    "sourcesContent": [
+        "export function hello(name: string): string {\n\treturn `你好，${name}`;\n}\n"
+    ]
+}

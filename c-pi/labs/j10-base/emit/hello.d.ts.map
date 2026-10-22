@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "file": "hello.d.ts",
+    "sourceRoot": "",
+    "sources": [
+        "hello.ts"
+    ],
+    "names": [],
+    "mappings": "AAAA,wBAAgB,KAAK,CAAC,IAAI,EAAE,MAAM,GAAG,MAAM,CAE1C"
+}

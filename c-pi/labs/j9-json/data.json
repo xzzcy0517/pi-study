@@ -1,0 +1,9 @@
+{
+	"name": "pi-ai",
+	"version": "1.2.0",
+	"stable": true,
+	"entries": ["index.ts", "models.ts"],
+	"address": {
+		"dir": "packages/ai/src"
+	}
+}
