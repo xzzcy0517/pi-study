@@ -13,7 +13,10 @@ export default defineConfig({
 			},
 			{
 				text: "第二部分 · 看懂启动",
-				items: [{ text: "02 执行 ./pi-test.sh 之后，发生了什么（先看大概）", link: "/02-run-to-ui" }],
+				items: [
+					{ text: "02 执行 ./pi-test.sh 之后，发生了什么（先看大概）", link: "/02-run-to-ui" },
+					{ text: "03 setupCli()：Pi 开跑前做了哪些准备", link: "/03-setup-cli" },
+				],
 			},
 		],
 		outline: { label: "本页目录" },

@@ -40,7 +40,7 @@ pi-study/
   1. 上游有更新 → 同步到 Fork 的 main；
   2. 从 main 检出当日学习分支 `pi-MMDD-YYYY`；
   3. 在学习分支上学习；通过对比各学习分支与 main 的 diff，掌握上游新增/变化的代码。
-- **当前分支状态**（如与实际不符，以 `git branch` 为准并更新本节）：`pi/` 当前在学习分支 `pi-1022-2026`，工作区干净；本地已有 `main`、`pi-1015-2026`、`pi-1020-2026`、`pi-1022-2026` 四个分支（`pi-1006-2026` 仅在远端）。
+- **当前分支状态**（如与实际不符，以 `git branch` 为准并更新本节）：`pi/` 当前在学习分支 `pi-1104-2026`，工作区干净；本地已有 `main`、`pi-1015-2026`、`pi-1020-2026`、`pi-1022-2026`、`pi-1104-2026` 五个分支（`pi-1006-2026` 仅在远端）。
 
 ## 学习方法论
 
@@ -73,6 +73,8 @@ pi-study/
 - [x] 第一条支线 `c-pi/wiki/shell/`：**「pi-test.sh 陪读教程」7 讲**（面向零基础，逐段代码 + 可复制实验 + 预期输出，只围绕 pi/pi-test.sh 一个文件；旧版 13 篇综合文章已于 2026-10-14 按用户要求删除）
 - [x] shell 支线第二季：**「source-resolver.ts 陪读」第 8–13 讲**（同一站点、独立侧栏分组；对象：`pi/packages/coding-agent/src/experimental/source-resolver.ts`，87 行。背景：pi-test.sh 第 58 行经 `node --import` 预加载它，把 `@earendil-works/*` 花名按 tsconfig.json 的 paths 映射到 `packages/*/src/` 源码，实现「引用内部代码、免构建跑源码」。比喻体系：翻译官/花名册/翻译卡片/前台；实验落 `labs/r8`–`r13`，输出全部实跑验证；站点 `npm run build:shell` 已通过）
 - [x] 第二条支线 `c-pi/wiki/js-ts/`：**「JS/TS 语法扫盲」12 讲**（2026-10-20 建。面向非程序员读者的语法急救站：把 `source-resolver.ts` + `pi/tsconfig.json` + `pi/tsconfig.base.json` 用到的全部语法点与配置项逐讲扫盲——四种语言分工、const/let、字符串、对象数组、函数与箭头、判断逻辑、循环与 throw、TS 批注（interface/readonly/?./??= 等）、JSON 格式、两份 tsconfig 逐条精讲（strict/erasableSyntaxOnly/verbatimModuleSyntax/noEmit/extends/include/exclude 等，均用 pi 自带 tsc 7.0.2 做实跑实验）、符号速查表。实验落 `labs/j1`–`j11`，输出全部实跑验证；启动 `npm run dev:js-ts`，`build:js-ts` 已通过）
+- [x] 主线第 03 篇（新）：`c-pi/docs/03-setup-cli.md` 改为导览页，详细内容迁到第三条支线 Wiki（2026-11-11，基于 `pi-1104-2026`。从 `cli.ts` 第一个方法 `setupCli()` 出发，递归读完 `cli/setup.ts`、`config.ts`、`core/http-dispatcher.ts`、`utils/child-process.ts`、`utils/paths.ts`、`utils/text.ts` 及运行时读取的 `package.json`；逐行逐块讲解，区分导入副作用与未调用工具函数，含隔离验证示例。下一篇进入 `main.ts`）
+- [x] 第三条支线 `c-pi/wiki/coding-agent/`：**「coding-agent 入口陪读」第 0–9 章 32 讲（已完成）**（2026-11-11 建。面向非程序员/新人，把 setupCli() 分支拆成短视频友好的小讲，每讲配可运行示例；第 0–2 章入口与 setupCli() 五步准备，第 3 章 http-dispatcher，第 4 章 config.ts 基础，第 5 章自更新，第 6 章资源与用户路径，第 7 章 child-process，第 8 章 paths/text，第 9 章毕业总结；实验落 `labs/coding-agent/a00`–`a31`，全部实跑通过；启动 `npm run dev:coding-agent`，`build:coding-agent` 已通过。下一阶段进入 `main.ts`）
 - [ ] 全景梳理：输出原仓库功能清单、运行方式、功能点地图 → `c-pi/docs/`
 - [ ] 按最小粒度制定复现路线图（拆分学习步骤）
-- [ ] 在当前学习分支 `pi-1022-2026` 上开始第一步复现
+- [ ] 在当前学习分支 `pi-1104-2026` 上开始第一步复现

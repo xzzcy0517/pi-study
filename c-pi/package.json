@@ -11,6 +11,8 @@
 		"dev:shell": "npm run dev --workspace wiki/shell",
 		"build:shell": "npm run build --workspace wiki/shell",
 		"dev:js-ts": "npm run dev --workspace wiki/js-ts",
-		"build:js-ts": "npm run build --workspace wiki/js-ts"
+		"build:js-ts": "npm run build --workspace wiki/js-ts",
+		"dev:coding-agent": "npm run dev --workspace wiki/coding-agent",
+		"build:coding-agent": "npm run build --workspace wiki/coding-agent"
 	}
 }

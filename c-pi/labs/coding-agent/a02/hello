@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+console.log("shebang 让系统找到 node 来执行我");
